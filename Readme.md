@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Полушкин](https://up.htmlacademy.ru/adaptive/19/user/12117).
-* Наставник: `Неизвестно`.
+* Студент: [Дмитрий Полушкин](https://htmlacademy.ru/profile/the_maid).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
