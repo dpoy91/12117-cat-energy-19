@@ -3,12 +3,11 @@
 }
 
 .advantages__item {
-  display: flex;
   margin-bottom: 20px;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.advantages__item--last-child {
+  margin-bottom: 0;
 }
 
 .advantages__title {
@@ -16,13 +15,26 @@
 }
 
 .advantages__icon {
-  min-width: 60px;
-  height: 60px;
   margin-right: 20px;
   background-color: @advantages-bg;
 }
 
+.advantages__icon--leaf {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.advantages__icon--powder {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages__icon--dining {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages__icon--clock {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 .advantages__text {
-  .font(@arial, 14px, 18px, @base-color-text);
   margin: 0;
 }
