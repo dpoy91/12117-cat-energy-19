@@ -5,12 +5,12 @@
   color: @base-color-text;
 }
 
-.text--size--s {
+.text--size--small {
   font-size: 12px;
   line-height: 12px;
 }
 
-.text--size--l {
+.text--size--large {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -19,13 +19,55 @@
   text-transform: uppercase;
 }
 
-.text--row--small {
-  font-size: 12px;
-  line-height: 16px;
+.text--title {
+  font-size: 16px;
+  line-height: 20px;
+  color: @base-color-header;
 }
 
-.text--contacts {
+.text--title--normal {
   font-style: normal;
   text-transform: none;
   line-height: 20px;
+}
+
+.text--title--medium {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @base-color-header;
+}
+
+.text--title--large {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: @additional-color-text;
+}
+
+.text--title--big {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  color: @base-color-header;
+}
+
+.catalog .text--title--large {
+  color: @base-color-header;
+  line-height: 60px;
+}
+
+.catalog .text--size--large {
+  text-transform: none;
+  text-align: left;
+}
+
+.catalog .text--size--small {
+  line-height: 16px;
+}
+
+.catalog--additional .text--size--small {
+  font-size: 14px;
+  line-height: 14px;
 }
