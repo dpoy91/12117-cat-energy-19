@@ -24,7 +24,7 @@
           Открыть меню
         </button>
 
-        <nav class="page-header__navigation page-navigation">
+        <nav class="page-header__navigation page-navigation--show">
           <ul class="page-navigation__list list reset-indents">
             <li class="page-navigation__item"><a href="index.html" class="page-navigation__link link">Главная</a></li>
             <li class="page-navigation__item"><a href="catalog.html" class="page-navigation__link link">Каталог продукции</a></li>
@@ -39,14 +39,14 @@
       <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков Кэт Энерджи</h1>
 
       <section class="page-main__request-form request-form">
-        <h2 class="request-form__title title">Функциональное питание для котов</h2>
-        <p class="request-form__notice">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <h2 class="request-form__title text text--title--large">Подбор программы</h2>
+        <p class="request-form__notice notice text">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <form action="https://echo.htmlacademy.ru" class="page-main__form form" method="post">
           <fieldset class="form__block form__block--personal">
             <legend class="form__legend visually-hidden">Информация о коте</legend>
 
-            <ul class="form__list list reset-indents">
+            <ul class="form__list list list--column reset-indents">
               <li class="form__item field-text">
                 <label class="field-text__label" for="pet-name">Имя:*</label>
                 <input class="field-text__input" type="text" name="pet-name" id="pet-name" placeholder="Барсик" required>
@@ -67,7 +67,7 @@
           <fieldset class="form__block form__block--target">
             <legend class="form__legend visually-hidden">Желаемый результат</legend>
 
-            <ul class="form__list list reset-indents">
+            <ul class="form__list list list--column reset-indents">
               <li class="form__item field-radio">
                 <input class="field-radio__input" type="radio" name="target" value="weight-loss" id="weight-loss" checked>
                 <label class="field-radio__label" for="weight-loss">Похудение</label>
@@ -86,9 +86,9 @@
           </fieldset>
 
           <fieldset class="form__block form__block--contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend text text--legend">Контактные данные (владельца кота)</legend>
 
-            <ul class="form__list list reset-indents">
+            <ul class="form__list list list--column reset-indents">
               <li class="form__item field-text">
                 <label class="field-text__label" for="email">E-mail:*</label>
                 <input class="field-text__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -102,9 +102,9 @@
           </fieldset>
 
           <fieldset class="form__block form__block--comment">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend text text--legend">Комментарий</legend>
 
-            <ul class="form__list list reset-indents">
+            <ul class="form__list list list--column reset-indents">
               <li class="form__item field-text">
                 <label class="field-text__label visually-hidden" for="comment">Введите комментарий</label>
                 <textarea class="field-text__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -113,9 +113,9 @@
           </fieldset>
 
           <fieldset class="form__block form__block--additional">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend text text--legend">Дополнительно</legend>
 
-            <ul class="form__list list reset-indents">
+            <ul class="form__list list list--column reset-indents">
               <li class="form__item field-checkbox">
                 <input class="field-checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="field-checkbox__label" for="sweetener">Сахарозаменитель</label>
@@ -140,7 +140,7 @@
 
           <button type="submit" class="button button__form">Отправить заявку</button>
 
-          <p class="form__notice">* — Обязательные поля</p>
+          <p class="form__notice text text--align--center">* — Обязательные поля</p>
         </form>
       </section>
 
@@ -148,11 +148,11 @@
       <section class="page-main__contacts contacts">
         <ul class="contacts__list list list--contacts reset-indents">
           <li class="contacts__item">
-            <h3 class="contacts__title title title--contacts">Приглашаем к сотрудничеству дилеров!</h3>
+            <h3 class="contacts__title text text--title">Приглашаем к сотрудничеству дилеров!</h3>
           </li>
 
           <li class="contacts__item">
-            <address class="contacts__address text text--contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <address class="contacts__address text text--title--normal">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </li>
         </ul>
 
@@ -189,7 +189,7 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link">HTML Academy
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link text">HTML Academy
           <img src="https://via.placeholder.com/127x34" class="copyright__image" alt="Логотип сайта HTML Academy" width="27" height="34">
         </a>
       </div>

@@ -5,6 +5,11 @@
   color: @base-color-text;
 }
 
+.text--align--center {
+  text-align: center;
+  line-height: 16px;
+}
+
 .text--size--small {
   font-size: 12px;
   line-height: 12px;
@@ -53,7 +58,15 @@
   color: @base-color-header;
 }
 
-.catalog .text--title--large {
+.text--legend {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: @base-color-header;
+}
+
+.catalog .text--title--large,
+.request-form .text--title--large {
   color: @base-color-header;
   line-height: 60px;
 }
@@ -70,4 +83,19 @@
 .catalog--additional .text--size--small {
   font-size: 14px;
   line-height: 14px;
+}
+
+.copyright .text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.banner .text {
+  font-size: 16px;
+  line-height: 20px;
+  color: @additional-color-text;
+  text-align: center;
+  text-transform: none;
 }
