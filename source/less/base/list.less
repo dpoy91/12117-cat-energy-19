@@ -1,16 +1,17 @@
 .list {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+}
+
+.contacts .list {
+  flex-wrap: nowrap;
 }
 
 .list--stats {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .list--column {
   flex-direction: column;
-}
-
-.list--contacts {
-  padding-bottom: 30px;
 }
