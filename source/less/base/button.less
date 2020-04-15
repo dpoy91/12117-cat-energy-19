@@ -6,17 +6,63 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header .button {
+  background-color: transparent;
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.button--menu-burger {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.button--promo {
+  position: relative;
+  top: 301px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 73px;
+  background-color: @catalog-item-bg;
+  text-transform: uppercase;
 }
 
 .button--product {
-  max-width: 280px;
-  padding: 13px 114px;
+  padding: 10px 109px;
+  text-transform: uppercase;
   background-color: @catalog-item-bg;
 }
 
+.button--more {
+  padding: 10px 93px;
+  text-transform: uppercase;
+  background-color: @categories-item-bg;
+  color: @base-color-text;
+  margin-top: 9px;
+  margin-bottom: 4px;
+
+  &:hover {
+    background-color: @gray-button-hover;
+  }
+}
+
 .button--form {
-  max-width: 280px;
-  padding: 13px 78px;
+  padding: 10px 78px;
   background-color: @catalog-item-bg;
   text-transform: uppercase;
 }

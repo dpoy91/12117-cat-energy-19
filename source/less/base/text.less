@@ -63,12 +63,19 @@
   font-size: 24px;
   line-height: 24px;
   color: @base-color-header;
+  padding: 0;
 }
 
 .catalog .text--title--large,
 .request-form .text--title--large {
   color: @base-color-header;
   line-height: 60px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.catalog .text--title--large {
+  padding: 0 20px;
 }
 
 .catalog .text--size--large {
@@ -92,10 +99,33 @@
   text-transform: none;
 }
 
+.contacts .text--title {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+}
+
+.more .text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.more .text--title {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .banner .text {
   font-size: 16px;
   line-height: 20px;
   color: @additional-color-text;
   text-align: center;
   text-transform: none;
+  align-self: flex-end;
+  padding: 27px 50px;
+}
+
+.text--underline {
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 22px;
 }
