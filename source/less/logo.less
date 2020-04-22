@@ -1,6 +1,29 @@
 .logo {
   width: 33px;
   height: 38px;
+
+  @media (min-width: @tablet) {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+.logo--mobile {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.logo--tablet {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
+}
+
+.logo--destop {
+  display: none;
 }
 
 .logo--footer {
@@ -8,4 +31,8 @@
   height: 24px;
   margin: 0 auto;
   padding-bottom: 55px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
 }

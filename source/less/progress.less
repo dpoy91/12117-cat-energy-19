@@ -1,3 +1,44 @@
+.progress {
+  @media (min-width: @tablet) {
+    min-height: 462px;
+    background-color: @categories-item-bg;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: 241px;
+  }
+}
+
+.progress__image {
+  position: relative;
+  left: calc(50% - 144px);
+
+  @media (min-width: @tablet) {
+    left: calc(50% - 303px);
+  }
+}
+
+.progress__image--mobile {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.progress__image--tablet {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+  }
+}
+
+.progress__image--destop {
+  display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+
 .progress__item {
   display: none;
   margin: 20px 0;

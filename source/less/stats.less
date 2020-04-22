@@ -1,15 +1,41 @@
 .stats {
   padding-top: 10px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.stats__list {
+  @media (min-width: @tablet) {
+    padding-top: 26px;
+  }
+}
+
+.stats__item {
+  @media (min-width: @tablet) {
+    margin-right: 42px;
+  }
 }
 
 .stats__text {
-  position: absolute;
-  top: 48px;
-  left: -3px;
-  margin: 0 20px;
+  position: relative;
+  top: 10px;
+  margin: 0;
+  padding: 0 10px;
   background-color: @categories-item-bg;
+  text-transform: lowercase;
+
+  @media (min-width: @tablet) {
+    background-color: #ffffff;
+  }
 }
 
 .stats__value {
   margin: 0;
+
+  @media (min-width: @tablet) {
+    margin: 1px 0;
+  }
 }

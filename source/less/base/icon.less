@@ -8,11 +8,22 @@
   height: 50px;
   border-radius: 50%;
   background-color: @catalog-item-bg;
+
+  @media (min-width: @tablet) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .advantages .icon {
   min-width: 60px;
   height: 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet) {
+    max-width: 80px;
+    height: 80px;
+  }
 }
 
 .icon__picture--weight-loss {
@@ -24,6 +35,13 @@
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet) {
+    width: 140px;
+    height: 194px;
+    left: 30px;
+    top: -11px;
+  }
 }
 
 .icon__picture--weight-gain {
@@ -35,4 +53,11 @@
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet) {
+    width: 268px;
+    height: 112px;
+    left: -34px;
+    top: 44px;
+  }
 }

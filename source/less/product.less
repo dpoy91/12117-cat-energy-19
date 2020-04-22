@@ -6,6 +6,17 @@
   border-left: 1px solid @border-color;
   border-right: 1px solid @border-color;
   padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    max-width: 324px;
+    background-color: @categories-item-bg;
+    border: none;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 245px;
+  }
 }
 
 .more .product {
@@ -21,6 +32,10 @@
 
 .product--first {
   border-top: 1px solid @border-color;
+
+  @media (min-width: @tablet) {
+    border: none;
+  }
 }
 
 .product__button {

@@ -3,6 +3,11 @@
   font-size: 14px;
   line-height: 18px;
   color: @base-color-text;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .text--align--center {
@@ -13,6 +18,11 @@
 .text--size--small {
   font-size: 12px;
   line-height: 12px;
+
+  @media (min-width: @tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .text--size--large {
@@ -22,12 +32,22 @@
   color: @base-color-header;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .text--title {
   font-size: 16px;
   line-height: 20px;
   color: @base-color-header;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .text--title--normal {
@@ -42,6 +62,10 @@
   line-height: 37px;
   text-transform: uppercase;
   color: @base-color-header;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+  }
 }
 
 .text--title--large {
@@ -56,6 +80,10 @@
   font-size: 36px;
   line-height: 60px;
   color: @base-color-header;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+  }
 }
 
 .text--legend {
@@ -72,10 +100,18 @@
   line-height: 60px;
   font-weight: 400;
   margin-top: 15px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+  }
 }
 
 .catalog .text--title--large {
   padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 17px 30px;
+  }
 }
 
 .catalog .text--size--large {
@@ -128,4 +164,8 @@
 .text--underline {
   border-bottom: 1px solid @border-color;
   padding-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    border: none;
+  }
 }

@@ -1,12 +1,33 @@
 .example {
   padding: 20px;
+  background-color: @categories-item-bg;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px 30px 30px;
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 110px;
+    background-color: @categories-item-bg;
+  }
 }
 
 .example__title {
   margin-top: -1px;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet) {
+    margin-top: -5px;
+  }
 }
 
 .example__text {
   margin-right: 2px;
+
+  @media (min-width: @tablet) {
+    padding-top: 43px;
+    padding-right: 15px;
+    margin-right: 0;
+  }
 }
