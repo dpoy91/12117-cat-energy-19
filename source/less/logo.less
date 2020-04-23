@@ -20,10 +20,18 @@
   @media (min-width: @tablet) {
     display: block;
   }
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
 
 .logo--destop {
   display: none;
+
+  @media (min-width: @desktop) {
+    display: block;
+  }
 }
 
 .logo--footer {

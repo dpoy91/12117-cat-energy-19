@@ -5,6 +5,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop) {
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+  }
 }
 
 .stats__list {
@@ -29,6 +35,10 @@
 
   @media (min-width: @tablet) {
     background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop) {
+    background-color: @categories-item-bg;
   }
 }
 

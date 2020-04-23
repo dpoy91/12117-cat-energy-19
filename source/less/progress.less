@@ -6,6 +6,11 @@
     margin-right: -30px;
     margin-top: 241px;
   }
+
+  @media (min-width: @desktop) {
+    width: 50%;
+    margin: 0;
+  }
 }
 
 .progress__image {
@@ -14,6 +19,10 @@
 
   @media (min-width: @tablet) {
     left: calc(50% - 303px);
+  }
+
+  @media (min-width: @tablet) {
+    left: 240px;
   }
 }
 
@@ -29,9 +38,13 @@
   @media (min-width: @tablet) {
     display: block;
   }
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
 
-.progress__image--destop {
+.progress__image--desktop {
   display: none;
 
   @media (min-width: @desktop) {
