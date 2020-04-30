@@ -6,6 +6,15 @@
   background-color: @background;
   padding: 15px 20px;
   border-bottom: 1px solid @border-color;
+
+  @media (min-width: @tablet) {
+    padding: 20px 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 50px 0;
+  }
 }
 
 .page-header__logo {
@@ -16,6 +25,10 @@
   display: none;
   margin-left: -20px;
   margin-right: -20px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
 }
 
 .page-header__navigation--show {

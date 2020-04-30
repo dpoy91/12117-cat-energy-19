@@ -1,23 +1,59 @@
 .categories {
   padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .categories__item {
+  position: relative;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .categories__title {
   margin-top: 10px;
   margin-left: 19px;
+
+  @media (min-width: @tablet) {
+    margin: 23px 0;
+  }
 }
 
 .categories__text {
   margin-top: 5px;
   margin-bottom: 0;
+
+  @media (min-width: @tablet) {
+    padding-right: 220px;
+    margin-top: 2px;
+  }
+}
+
+.categories__item:nth-child(2) .categories__text {
+  @media (min-width: @tablet) {
+    padding-right: 260px;
+  }
 }
 
 .categories__icon {
   position: relative;
   margin-top: -12px;
   margin-left: 2px;
+
+  @media (min-width: @tablet) {
+    position: absolute;
+    right: 62px;
+    top: 104px;
+  }
 }

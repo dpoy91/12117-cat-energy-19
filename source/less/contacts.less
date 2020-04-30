@@ -3,6 +3,26 @@
   line-height: 20px;
   padding: 27px 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    padding: 27px 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 40px 0;
+  }
+}
+
+.contacts__item {
+  @media (min-width: @tablet) {
+    padding: 0 35px;
+  }
+}
+
+.contacts__address {
+  @media (min-width: @tablet) {
+    text-align: right;
+  }
 }
 
 .contacts__list {

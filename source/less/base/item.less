@@ -2,14 +2,47 @@
   display: flex;
 }
 
+.advantages .item {
+  position: relative;
+  display: flex;
+  counter-increment: my-counter;
+
+  @media (min-width: @tablet) {
+    width: 324px;
+    padding-right: 65px;
+    flex-direction: column;
+
+    &::before {
+      position: absolute;
+      left: 112px;
+      top: 93px;
+      content: counter(my-counter);
+      font-size: 281px;
+      color: @categories-item-bg;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    width: 305px;
+  }
+}
+
 .stats .item {
   position: relative;
   flex-direction: column;
   width: 124px;
+  height: 57px;
   text-align: center;
   border: 1px solid @border-stat-color;
   border-radius: 3px;
   padding: 15px;
+
+  @media (min-width: @tablet) {
+    width: 162px;
+    height: 70px;
+    padding: 12px;
+  }
 }
 
 .contacts .item {

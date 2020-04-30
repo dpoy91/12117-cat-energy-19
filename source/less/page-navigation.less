@@ -5,8 +5,26 @@
 .page-navigation__list {
   margin-top: 15px;
   margin-bottom: -15px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
+}
+
+.page-navigation__item {
+  @media (min-width: @tablet) {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-navigation__link--active {
   border-bottom: 2px solid @catalog-item-bg;
+
+  @media (min-width: @tablet) {
+    padding-bottom: 7px;
+  }
 }

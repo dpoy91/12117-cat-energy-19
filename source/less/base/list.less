@@ -10,8 +10,23 @@
 
 .list--stats {
   justify-content: space-between;
+
+  @media (min-width: @desktop) {
+    justify-content: start;
+  }
 }
 
 .list--column {
   flex-direction: column;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog--additional .list--column {
+  @media (min-width: @tablet) {
+    flex-direction: column;
+  }
 }

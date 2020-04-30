@@ -11,6 +11,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @base-color-header;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .product .link {
@@ -38,14 +43,33 @@
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: @tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop) {
+    width: 280px;
+  }
 }
 
 .page-navigation__item .link {
   font-size: 20px;
   line-height: 20px;
   color: @base-color-header;
+
+  @media (min-width: @tablet) {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .categories__item .link {
   padding-top: 20px;
+
+  @media (min-width: @tablet) {
+    padding-top: 34px;
+    padding-bottom: 9px;
+  }
 }

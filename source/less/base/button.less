@@ -30,6 +30,10 @@
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   font-size: 0;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }
 
 .button--promo {
@@ -40,12 +44,24 @@
   padding: 10px 73px;
   background-color: @catalog-item-bg;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    top: 0;
+    left: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 11px 27px;
+  }
 }
 
 .button--product {
   padding: 10px 109px;
   text-transform: uppercase;
   background-color: @catalog-item-bg;
+
+  @media (min-width: @desktop) {
+    padding: 10px 72px;
+  }
 }
 
 .button--more {
@@ -58,6 +74,10 @@
 
   &:hover {
     background-color: @gray-button-hover;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 10px 57px;
   }
 }
 
