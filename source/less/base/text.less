@@ -110,7 +110,7 @@
   padding: 0 20px;
 
   @media (min-width: @tablet) {
-    padding: 17px 30px;
+    padding: 17px 0;
   }
 
   @media (min-width: @desktop) {
@@ -125,6 +125,10 @@
 
 .catalog .text--size--small {
   line-height: 16px;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+  }
 }
 
 .catalog--additional .text--size--small {
@@ -146,6 +150,14 @@
 .more .text {
   font-size: 12px;
   line-height: 16px;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 25px 40px 0 40px;
+  }
 }
 
 .more .text--title {
@@ -153,6 +165,11 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    padding: 0 55px
+  }
 }
 
 .banner .text {

@@ -33,4 +33,9 @@
 
 .page-header__navigation--show {
   display: block;
+  flex: 1 1 100%;
+
+  @media (min-width: @tablet) {
+    flex: none;
+  }
 }

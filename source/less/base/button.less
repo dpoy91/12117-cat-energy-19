@@ -59,8 +59,12 @@
   text-transform: uppercase;
   background-color: @catalog-item-bg;
 
+  @media (min-width: @tablet) {
+    padding: 10px 93px;
+  }
+
   @media (min-width: @desktop) {
-    padding: 10px 72px;
+    padding: 10px 52px;
   }
 }
 
@@ -74,6 +78,12 @@
 
   &:hover {
     background-color: @gray-button-hover;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 10px 78px;
+    margin-top: 68px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop) {
