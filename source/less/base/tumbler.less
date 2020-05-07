@@ -7,4 +7,25 @@
   width: 35px;
   height: 6px;
   background-color: @catalog-item-bg;
+
+  @media (min-width: @tablet) {
+    top: -16px;
+    left: 46%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid @border-stat-color;
+    background-color: @background;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: @catalog-item-bg;
+    }
+  }
 }

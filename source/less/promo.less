@@ -17,6 +17,7 @@
 
   @media (min-width: @desktop) {
     padding: 54px 80px;
+    width: 50%;
   }
 }
 
@@ -39,6 +40,7 @@
   width: 280px;
   height: 270px;
   background-image: url("../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
   z-index: 0;
 
   @media (min-width: @tablet) {
@@ -47,5 +49,12 @@
     width: 709px;
     height: 609px;
     background-image: url("../img/index-can-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop) {
+    background-image: url("../img/index-can-desktop@1x.png");
+    top: -26px;
+    left: 450px;
+    height: 554px;
   }
 }

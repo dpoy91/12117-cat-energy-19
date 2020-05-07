@@ -33,7 +33,7 @@
   display: flex;
   justify-content: flex-end;
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   background-color: @advantages-bg;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
@@ -47,14 +47,20 @@
     left: 113px;
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      left: 93px;
+    }
   }
 
   @media (min-width: @tablet) {
     width: 100%;
+    min-height: 200px;
   }
 
   @media (min-width: @desktop) {
-    width: 280px;
+    width: 245px;
+    min-height: 290px;
   }
 }
 
@@ -68,6 +74,17 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: @desktop) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.page-header--index .link {
+  @media (min-width: @desktop) {
+    color: @additional-color-text;
+  }
 }
 
 .categories__item .link {
@@ -76,5 +93,9 @@
   @media (min-width: @tablet) {
     padding-top: 34px;
     padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 10px 10px 10px 0;
   }
 }

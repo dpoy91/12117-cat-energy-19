@@ -92,6 +92,11 @@
   line-height: 24px;
   color: @base-color-header;
   padding: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog .text--title--large,
@@ -114,13 +119,23 @@
   }
 
   @media (min-width: @desktop) {
-    padding-left: 0;
+    padding: 10px 0;
+    margin-top: 10px;
   }
 }
 
 .catalog .text--size--large {
   text-transform: none;
   text-align: left;
+
+  @media (min-width: @tablet) {
+    font-size: 36px;
+    padding-left: 37px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 0;
+  }
 }
 
 .catalog .text--size--small {
@@ -158,6 +173,10 @@
     line-height: 20px;
     padding: 25px 40px 0 40px;
   }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+  }
 }
 
 .more .text--title {
@@ -168,7 +187,11 @@
 
   @media (min-width: @tablet) {
     font-size: 20px;
-    padding: 0 55px
+    padding: 0 55px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 5px 0 27px 0;
   }
 }
 
@@ -180,6 +203,20 @@
   text-transform: none;
   align-self: flex-end;
   padding: 27px 50px;
+
+  @media (min-width: @tablet) {
+    align-self: center;
+    text-align: left;
+    max-width: 285px;
+    padding-left: 0;
+    padding-right: 100px;
+  }
+
+  @media (min-width: @desktop) {
+    align-self: flex-end;
+    text-align: center;
+    padding: 27px 41px;
+  }
 }
 
 .text--underline {

@@ -28,6 +28,10 @@
   @media (min-width: @tablet) {
     margin: 23px 0;
   }
+
+  @media (min-width: @desktop) {
+    margin: 12px 60px 23px 60px;
+  }
 }
 
 .categories__text {
@@ -38,11 +42,20 @@
     padding-right: 220px;
     margin-top: 2px;
   }
+
+  @media (min-width: @desktop) {
+    padding-right: 0;
+    margin-top: 40px;
+  }
 }
 
 .categories__item:nth-child(2) .categories__text {
   @media (min-width: @tablet) {
     padding-right: 260px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-right: 0;
   }
 }
 
@@ -55,5 +68,13 @@
     position: absolute;
     right: 62px;
     top: 104px;
+  }
+
+  @media (min-width: @desktop) {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: -6px;
+    margin-left: 0;
   }
 }

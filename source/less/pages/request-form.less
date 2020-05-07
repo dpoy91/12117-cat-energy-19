@@ -2,6 +2,17 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 18px;
+
+  @media (min-width: @tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 4px 0 60px 0;
+  }
 }
 
 .request-form__title {
@@ -10,4 +21,8 @@
 
 .request-form__notice {
   margin-top: -6px;
+
+  @media (min-width: @tablet) {
+    margin-top: 55px;
+  }
 }

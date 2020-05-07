@@ -1,4 +1,5 @@
 .social {
+  flex: 1 1 auto;
   padding: 20px;
   justify-content: center;
   border-top: 1px solid @border-stat-color;
@@ -11,4 +12,8 @@
 
 .social__item {
   margin: 0 17px;
+
+  @media (min-width: @tablet) {
+    margin: 0 10px;
+  }
 }

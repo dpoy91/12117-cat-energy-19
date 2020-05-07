@@ -13,9 +13,17 @@
 .catalog--additional .product-info {
   width: 280px;
 
-  @media (min-width: @desktop) {
+  @media (min-width: @tablet) {
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    width: 650px;
+    min-height: 47px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 }

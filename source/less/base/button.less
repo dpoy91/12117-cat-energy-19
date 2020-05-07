@@ -52,6 +52,11 @@
     line-height: 20px;
     padding: 11px 27px;
   }
+
+  @media (min-width: @desktop) {
+    top: 4px;
+    left: -1px;
+  }
 }
 
 .button--product {
@@ -87,7 +92,7 @@
   }
 
   @media (min-width: @desktop) {
-    padding: 10px 57px;
+    padding: 10px 39px;
   }
 }
 
@@ -95,4 +100,13 @@
   padding: 10px 78px;
   background-color: @catalog-item-bg;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    padding: 16px 65px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 16px 208px;
+  }
 }
