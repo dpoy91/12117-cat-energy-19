@@ -1,4 +1,18 @@
 .banner {
   margin-top: 39px;
   margin-bottom: 27px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet) {
+    margin: 70px 0;
+  }
+
+  @media (min-width: @desktop) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 19px;
+  }
 }

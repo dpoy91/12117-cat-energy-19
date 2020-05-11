@@ -3,4 +3,17 @@
   color: @base-color-header;
   text-transform: uppercase;
   padding-right: 10px;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+    padding-right: 300px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 350px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

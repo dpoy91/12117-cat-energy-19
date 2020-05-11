@@ -1,29 +1,104 @@
 .product {
-  max-width: 320px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-shrink: 0;
   border-bottom: 1px solid @border-color;
   border-left: 1px solid @border-color;
   border-right: 1px solid @border-color;
   padding: 0 20px;
 
+  @media (min-width: 598px) {
+    padding: 0 120px;
+  }
+
   @media (min-width: @tablet) {
-    max-width: 100%;
+    width: 324px;
     background-color: @categories-item-bg;
     border: none;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 37px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+  }
+}
+
+.catalog .product {
+  @media (min-width: @tablet) {
+    min-height: 431px;
   }
 }
 
 .more .product {
   position: relative;
   padding: 20px;
+
+  @media (min-width: @tablet) {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    padding: 37px;
+  }
 }
 
 .catalog--additional .product {
   padding: 0;
   border-left: none;
   border-right: none;
+
+  @media (min-width: @tablet) {
+    width: 100%;
+    min-height: 139px;
+    background-color: transparent;
+    border: 1px solid @border-color;
+    padding: 10px 37px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0;
+    border-left: inherit;
+    border-right: inherit;
+    border-bottom: none;
+    min-height: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.catalog--additional .product--last {
+  @media (min-width: @desktop) {
+    border-bottom: 1px solid @border-color;
+  }
+}
+
+.product__image {
+  @media (min-width: @tablet) {
+    position: relative;
+    top: -77px;
+    width: 324px;
+    height: 172px;
+    margin-left: -37px;
+    margin-right: -37px;
+  }
+
+  @media (min-width: @desktop) {
+    position: relative;
+    top: -77px;
+    width: 245px;
+    height: 172px;
+    margin-left: -37px;
+    margin-right: -37px;
+  }
+}
+
+.product__image--big {
+  @media (min-width: @tablet) {
+    height: 208px;
+    top: -114px;
+  }
 }
 
 .product--first {
@@ -36,9 +111,18 @@
 
 .product__button {
   margin-bottom: 24px;
+
+  @media (min-width: @tablet) {
+    margin: 34px 0 10px 0;
+  }
 }
 
 .catalog--additional .product__button {
   margin-top: 15px;
   margin-bottom: 17px;
+  text-align: center;
+
+  @media (min-width: @desktop) {
+    width: 245px;
+  }
 }

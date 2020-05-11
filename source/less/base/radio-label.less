@@ -8,6 +8,13 @@
     height: 28px;
     border: 1px solid @border-color;
     border-radius: 50%;
+
+    @media (min-width: @tablet) {
+      top: -5px;
+      left: -60px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &::after {
@@ -20,5 +27,11 @@
     height: 12px;
     background-color: @advantages-bg;
     border-radius: 50%;
+
+    @media (min-width: @tablet) {
+      left: -48px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }

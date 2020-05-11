@@ -1,10 +1,10 @@
-.more .product {
-  justify-content: center;
-}
-
 .more__title {
   margin-top: 58px;
   margin-bottom: 0;
+
+  @media (min-width: @tablet) {
+    margin-top: 70px;
+  }
 
   &::after {
     content: "";
@@ -12,12 +12,28 @@
     width: 30px;
     height: 30px;
     top: 25px;
-    left: 145px;
+    left: 45%;
     background-image: url("../img/icon-plus-mobile.svg");
     opacity: 0.2;
+
+    @media (min-width: @tablet) {
+      width: 60px;
+      height: 60px;
+      top: 54px;
+      left: 41%;
+      background-image: url("../img/icon-plus.svg");
+    }
+
+    @media (min-width: @desktop) {
+      left: 38%;
+    }
   }
 }
 
 .more__text {
   margin-top: 8px;
+
+  @media (min-width: @tablet) {
+    margin-top: 0;
+  }
 }
