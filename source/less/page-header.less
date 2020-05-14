@@ -34,6 +34,11 @@
       background-size: 680px auto;
       background-repeat: no-repeat;
       background-position: right bottom;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: contain;
+      }
     }
   }
 }
@@ -57,7 +62,7 @@
   flex: 1 1 100%;
 
   @media (min-width: @tablet) {
-    flex: none;
+    flex: initial;
   }
 
   @media (min-width: @tablet) {

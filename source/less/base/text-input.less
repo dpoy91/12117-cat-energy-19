@@ -1,6 +1,6 @@
 .text-input {
   width: 100%;
-  border: 1px solid @border-color;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   padding: 12px 13px;
   font-size: 16px;
   line-height: 18px;
@@ -9,6 +9,18 @@
   @media (min-width: @tablet) {
     padding: 10px 17px;
     font-size: 20px;
+  }
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    outline: 2px solid @base-color-text;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid @invalid-color;
   }
 }
 

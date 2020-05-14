@@ -1,0 +1,38 @@
+.line {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 3px;
+    margin-top: calc(1em / 2 + 3px);
+    background-color: @advantages-bg;
+    z-index: -1;
+  }
+
+  &::before {
+    @media (min-width: @tablet) {
+      right: calc(100% - -40px);
+    }
+  }
+
+  @media (max-width: @tablet-breakpoint) {
+    &::before {
+      display: none;
+    }
+  }
+
+  &::after {
+    left: 0;
+  }
+}
+
+.line--large::after {
+  @media (max-width: 479px) {
+    margin-top: calc(1em / 2 - 20px);
+  }
+}
+
+.line--large {
+  margin-right: 75px;
+}

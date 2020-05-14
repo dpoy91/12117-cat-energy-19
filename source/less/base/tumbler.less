@@ -15,6 +15,7 @@
     height: 34px;
     border-radius: 50%;
     border: 1px solid @border-stat-color;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     background-color: @background;
 
     &::after {
@@ -26,6 +27,14 @@
       height: 8px;
       border-radius: 50%;
       background-color: @catalog-item-bg;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      border: 1px solid @catalog-item-bg;
     }
   }
 }

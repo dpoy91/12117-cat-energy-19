@@ -55,10 +55,20 @@
 .progress__item--before {
   background-image: url("../img/before-mobile@1x.png");
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: contain;
+  }
+
   @media (min-width: @tablet) {
     background-image: url("../img/before-tablet@1x.png");
     background-position-x: -8px;
     background-position-y: 4px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop) {
@@ -77,6 +87,11 @@
     right: 0;
     background-image: url("../img/after-tablet@1x.png");
     background-position-x: -336px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop) {

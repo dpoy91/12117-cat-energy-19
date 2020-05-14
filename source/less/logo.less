@@ -1,41 +1,33 @@
 .logo {
-  width: 33px;
-  height: 38px;
+  display: block;
+  width: 100%;
+  max-width: 33px;
 
   @media (min-width: @tablet) {
-    width: 173px;
-    height: 58px;
-  }
-}
-
-.logo--mobile {
-  @media (min-width: @tablet) {
-    display: none;
-  }
-}
-
-.logo--tablet {
-  display: none;
-
-  @media (min-width: @tablet) {
-    display: block;
+    max-width: 174px;
   }
 
   @media (min-width: @desktop) {
-    display: none;
+    max-width: 202px;
   }
 }
 
-.logo--destop {
-  display: none;
+.logo__image {
+  max-width: 100%;
+}
 
-  @media (min-width: @desktop) {
-    display: block;
+.logo__link svg {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
 .logo--footer {
-  width: 128px;
+  max-width: 128px;
   height: 24px;
   margin: 0 auto;
   padding-bottom: 55px;
