@@ -8,6 +8,16 @@
   }
 }
 
+.logo__link svg {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo--mobile {
   @media (min-width: @tablet) {
     display: none;
@@ -26,7 +36,7 @@
   }
 }
 
-.logo--destop {
+.logo--desktop {
   display: none;
 
   @media (min-width: @desktop) {

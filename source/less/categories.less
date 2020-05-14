@@ -49,6 +49,37 @@
   }
 }
 
+.categories__link {
+  position: relative;
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    top: 27px;
+    right: -47px;
+    width: 37px;
+    height: 12px;
+    transform: translateY(-50%);
+    transition: 0.2s;
+
+    @media (min-width: @tablet) {
+      top: 45px;
+      right: -59px;
+    }
+
+    @media (min-width: @desktop) {
+      top: 18px;
+      right: -35px;
+    }
+  }
+}
+
 .categories__item:nth-child(2) .categories__text {
   @media (min-width: @tablet) {
     padding-right: 260px;

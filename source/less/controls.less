@@ -17,8 +17,19 @@
 }
 
 .controls__label {
+  cursor: pointer;
+
   @media (min-width: @tablet) {
-    border-bottom: 1px dotted #d5d5d5;
+    border-bottom: 1px dotted @slider-border-color;
     padding-bottom: 5px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid @slider-border-color;
+  }
+
+  &:active {
+    border-bottom: none;
+    padding-bottom: 6px;
   }
 }
