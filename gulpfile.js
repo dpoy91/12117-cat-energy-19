@@ -8,8 +8,9 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
-var rename = require("gulp-rename");
 var csso =  require("gulp-csso");
+var uglify = require('gulp-uglify');
+var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -24,7 +25,6 @@ gulp.task("copy", function() {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
-      "source/js/**",
       "source/*.ico"
     ], {
       base: "source"
@@ -79,6 +79,13 @@ gulp.task("html", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -92,5 +99,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "sprite", "html", "js"));
 gulp.task("start", gulp.series("build", "server"));
